@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './Card';
+import CardBody from './CardBody';
+import Button from './Button';
+import CardImage from './CardImage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card>
+        <CardBody>
+          <Button text = {"подробнее"} link = "#" />
+        </CardBody>
+      </Card>
+      <Card>
+        <CardImage link={"https://auto.vercity.ru/gallery/img/automobiles/Bugatti/2009%20Bugatti%20Veyron%2016.4%20Centenaire/900x/2009%20Bugatti%20Veyron%2016.4%20Centenaire%20128.jpg"} text={"image"} />
+        <CardBody>
+          <Button text = {"купить"} link = "#2" />
+        </CardBody>
+      </Card>
     </div>
   );
 }
